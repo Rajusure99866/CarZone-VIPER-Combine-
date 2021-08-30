@@ -9,13 +9,34 @@
 /* Begin PBXBuildFile section */
 		DC189ECB26D5198300BD0A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189ECA26D5198300BD0A18 /* AppDelegate.swift */; };
 		DC189ECD26D5198300BD0A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189ECC26D5198300BD0A18 /* SceneDelegate.swift */; };
-		DC189ECF26D5198300BD0A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189ECE26D5198300BD0A18 /* ViewController.swift */; };
-		DC189ED226D5198300BD0A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC189ED026D5198300BD0A18 /* Main.storyboard */; };
 		DC189ED526D5198300BD0A18 /* CarZone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC189ED326D5198300BD0A18 /* CarZone.xcdatamodeld */; };
 		DC189ED726D5198600BD0A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC189ED626D5198600BD0A18 /* Assets.xcassets */; };
 		DC189EDA26D5198600BD0A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC189ED826D5198600BD0A18 /* LaunchScreen.storyboard */; };
-		DC189EE526D5198600BD0A18 /* CarZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189EE426D5198600BD0A18 /* CarZoneTests.swift */; };
 		DC189EF026D5198600BD0A18 /* CarZoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189EEF26D5198600BD0A18 /* CarZoneUITests.swift */; };
+		DC189F0026D51DAE00BD0A18 /* CZAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189EFF26D51DAE00BD0A18 /* CZAPIHandler.swift */; };
+		DC189F0226D51DBC00BD0A18 /* CZAPILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189F0126D51DBC00BD0A18 /* CZAPILoader.swift */; };
+		DC189F0426D51DE200BD0A18 /* CZResponseHandler+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189F0326D51DE200BD0A18 /* CZResponseHandler+Extensions.swift */; };
+		DC189F0626D51DF000BD0A18 /* CZAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189F0526D51DF000BD0A18 /* CZAPIConstants.swift */; };
+		DC189F0826D51F7000BD0A18 /* CZInformationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189F0726D51F7000BD0A18 /* CZInformationAPI.swift */; };
+		DC189F0D26D5200000BD0A18 /* CZCarManufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC189F0C26D5200000BD0A18 /* CZCarManufacturer.swift */; };
+		DC35538226D6924F006ED1AA /* CZNavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35538126D6924F006ED1AA /* CZNavigationBuilder.swift */; };
+		DC35538926D69478006ED1AA /* CZMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC35538826D69478006ED1AA /* CZMain.storyboard */; };
+		DC35538B26D694A5006ED1AA /* CZListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35538A26D694A5006ED1AA /* CZListRouter.swift */; };
+		DC35538D26D694E3006ED1AA /* CZListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35538C26D694E3006ED1AA /* CZListPresenter.swift */; };
+		DC35538F26D69506006ED1AA /* CZCommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35538E26D69506006ED1AA /* CZCommonListViewController.swift */; };
+		DC35539426D6A063006ED1AA /* CZCommonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35539226D6A063006ED1AA /* CZCommonListTableViewCell.swift */; };
+		DC35539526D6A063006ED1AA /* CZCommonListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC35539326D6A063006ED1AA /* CZCommonListTableViewCell.xib */; };
+		DC35539C26DA0FF1006ED1AA /* CZCommonListVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35539B26DA0FF1006ED1AA /* CZCommonListVC+Layout.swift */; };
+		DC3553A326DABD96006ED1AA /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3553A226DABD96006ED1AA /* ListPresenterTests.swift */; };
+		DC3553A626DAC8E7006ED1AA /* MockManufacturerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC3553A526DAC8E7006ED1AA /* MockManufacturerList.json */; };
+		DC3553A826DBA143006ED1AA /* MockModelsList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC3553A726DBA143006ED1AA /* MockModelsList.json */; };
+		DC3553AF26DBB125006ED1AA /* ServiceAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3553AE26DBB125006ED1AA /* ServiceAPITests.swift */; };
+		DC72867C26D649C300608ECF /* CZNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72867B26D649C300608ECF /* CZNetworkRequest.swift */; };
+		DC72867E26D649FD00608ECF /* CZRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72867D26D649FD00608ECF /* CZRequestProtocol.swift */; };
+		DC72868526D64E3B00608ECF /* CZURLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72868426D64E3B00608ECF /* CZURLRequest+Extensions.swift */; };
+		DC72868B26D655B700608ECF /* CZListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72868A26D655B700608ECF /* CZListInteracter.swift */; };
+		DCADD8D126DD05B600C9F69D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCADD8D026DD05B600C9F69D /* README.md */; };
+		DCADD8D426DD1EA600C9F69D /* CZReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADD8D326DD1EA600C9F69D /* CZReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +60,39 @@
 		DC189EC726D5198300BD0A18 /* CarZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC189ECA26D5198300BD0A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC189ECC26D5198300BD0A18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC189ECE26D5198300BD0A18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC189ED126D5198300BD0A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC189ED426D5198300BD0A18 /* CarZone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarZone.xcdatamodel; sourceTree = "<group>"; };
 		DC189ED626D5198600BD0A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC189ED926D5198600BD0A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC189EDB26D5198600BD0A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC189EE026D5198600BD0A18 /* CarZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC189EE426D5198600BD0A18 /* CarZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarZoneTests.swift; sourceTree = "<group>"; };
 		DC189EE626D5198600BD0A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC189EEB26D5198600BD0A18 /* CarZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC189EEF26D5198600BD0A18 /* CarZoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarZoneUITests.swift; sourceTree = "<group>"; };
 		DC189EF126D5198600BD0A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC189EFF26D51DAE00BD0A18 /* CZAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZAPIHandler.swift; sourceTree = "<group>"; };
+		DC189F0126D51DBC00BD0A18 /* CZAPILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZAPILoader.swift; sourceTree = "<group>"; };
+		DC189F0326D51DE200BD0A18 /* CZResponseHandler+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CZResponseHandler+Extensions.swift"; sourceTree = "<group>"; };
+		DC189F0526D51DF000BD0A18 /* CZAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZAPIConstants.swift; sourceTree = "<group>"; };
+		DC189F0726D51F7000BD0A18 /* CZInformationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZInformationAPI.swift; sourceTree = "<group>"; };
+		DC189F0C26D5200000BD0A18 /* CZCarManufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZCarManufacturer.swift; sourceTree = "<group>"; };
+		DC35538126D6924F006ED1AA /* CZNavigationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZNavigationBuilder.swift; sourceTree = "<group>"; };
+		DC35538826D69478006ED1AA /* CZMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CZMain.storyboard; sourceTree = "<group>"; };
+		DC35538A26D694A5006ED1AA /* CZListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZListRouter.swift; sourceTree = "<group>"; };
+		DC35538C26D694E3006ED1AA /* CZListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZListPresenter.swift; sourceTree = "<group>"; };
+		DC35538E26D69506006ED1AA /* CZCommonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZCommonListViewController.swift; sourceTree = "<group>"; };
+		DC35539226D6A063006ED1AA /* CZCommonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZCommonListTableViewCell.swift; sourceTree = "<group>"; };
+		DC35539326D6A063006ED1AA /* CZCommonListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZCommonListTableViewCell.xib; sourceTree = "<group>"; };
+		DC35539B26DA0FF1006ED1AA /* CZCommonListVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CZCommonListVC+Layout.swift"; sourceTree = "<group>"; };
+		DC3553A226DABD96006ED1AA /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		DC3553A526DAC8E7006ED1AA /* MockManufacturerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockManufacturerList.json; sourceTree = "<group>"; };
+		DC3553A726DBA143006ED1AA /* MockModelsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockModelsList.json; sourceTree = "<group>"; };
+		DC3553AE26DBB125006ED1AA /* ServiceAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPITests.swift; sourceTree = "<group>"; };
+		DC72867B26D649C300608ECF /* CZNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZNetworkRequest.swift; sourceTree = "<group>"; };
+		DC72867D26D649FD00608ECF /* CZRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZRequestProtocol.swift; sourceTree = "<group>"; };
+		DC72868426D64E3B00608ECF /* CZURLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CZURLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		DC72868A26D655B700608ECF /* CZListInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZListInteracter.swift; sourceTree = "<group>"; };
+		DCADD8D026DD05B600C9F69D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCADD8D326DD1EA600C9F69D /* CZReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +143,14 @@
 		DC189EC926D5198300BD0A18 /* CarZone */ = {
 			isa = PBXGroup;
 			children = (
-				DC189ECA26D5198300BD0A18 /* AppDelegate.swift */,
-				DC189ECC26D5198300BD0A18 /* SceneDelegate.swift */,
-				DC189ECE26D5198300BD0A18 /* ViewController.swift */,
-				DC189ED026D5198300BD0A18 /* Main.storyboard */,
-				DC189ED626D5198600BD0A18 /* Assets.xcassets */,
-				DC189ED826D5198600BD0A18 /* LaunchScreen.storyboard */,
-				DC189EDB26D5198600BD0A18 /* Info.plist */,
+				DC35538326D69416006ED1AA /* Modules */,
+				DC35538026D6923D006ED1AA /* Navigation */,
+				DC72867F26D64B4F00608ECF /* Extensions */,
+				DC72867626D645F100608ECF /* Application */,
+				DC189EFE26D51D7F00BD0A18 /* Network */,
+				DC189EFD26D51D7700BD0A18 /* Services */,
 				DC189ED326D5198300BD0A18 /* CarZone.xcdatamodeld */,
+				DCADD8D026DD05B600C9F69D /* README.md */,
 			);
 			path = CarZone;
 			sourceTree = "<group>";
@@ -116,7 +158,8 @@
 		DC189EE326D5198600BD0A18 /* CarZoneTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC189EE426D5198600BD0A18 /* CarZoneTests.swift */,
+				DC3553A426DAC8C1006ED1AA /* TestJSON */,
+				DC3553A126DABD6B006ED1AA /* ListModuleTests */,
 				DC189EE626D5198600BD0A18 /* Info.plist */,
 			);
 			path = CarZoneTests;
@@ -129,6 +172,178 @@
 				DC189EF126D5198600BD0A18 /* Info.plist */,
 			);
 			path = CarZoneUITests;
+			sourceTree = "<group>";
+		};
+		DC189EFD26D51D7700BD0A18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC189F0726D51F7000BD0A18 /* CZInformationAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC189EFE26D51D7F00BD0A18 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DC189EFF26D51DAE00BD0A18 /* CZAPIHandler.swift */,
+				DC189F0126D51DBC00BD0A18 /* CZAPILoader.swift */,
+				DC189F0326D51DE200BD0A18 /* CZResponseHandler+Extensions.swift */,
+				DC189F0526D51DF000BD0A18 /* CZAPIConstants.swift */,
+				DC72867B26D649C300608ECF /* CZNetworkRequest.swift */,
+				DC72867D26D649FD00608ECF /* CZRequestProtocol.swift */,
+				DCADD8D326DD1EA600C9F69D /* CZReachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DC189F0B26D51FE500BD0A18 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DC189F0C26D5200000BD0A18 /* CZCarManufacturer.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DC35538026D6923D006ED1AA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538126D6924F006ED1AA /* CZNavigationBuilder.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DC35538326D69416006ED1AA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538426D6941E006ED1AA /* ListViewModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DC35538426D6941E006ED1AA /* ListViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				DC3553AD26DBB021006ED1AA /* Controller */,
+				DC189F0B26D51FE500BD0A18 /* Entity */,
+				DC72868926D655A500608ECF /* Interacter */,
+				DC35539E26DAA881006ED1AA /* Presenter */,
+				DC35539D26DAA879006ED1AA /* Router */,
+				DC35538726D69462006ED1AA /* View */,
+			);
+			path = ListViewModule;
+			sourceTree = "<group>";
+		};
+		DC35538726D69462006ED1AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538826D69478006ED1AA /* CZMain.storyboard */,
+				DC35539226D6A063006ED1AA /* CZCommonListTableViewCell.swift */,
+				DC35539326D6A063006ED1AA /* CZCommonListTableViewCell.xib */,
+				DC35539B26DA0FF1006ED1AA /* CZCommonListVC+Layout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC35539D26DAA879006ED1AA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538A26D694A5006ED1AA /* CZListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DC35539E26DAA881006ED1AA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538C26D694E3006ED1AA /* CZListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DC3553A126DABD6B006ED1AA /* ListModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC3553A226DABD96006ED1AA /* ListPresenterTests.swift */,
+				DC3553AE26DBB125006ED1AA /* ServiceAPITests.swift */,
+			);
+			path = ListModuleTests;
+			sourceTree = "<group>";
+		};
+		DC3553A426DAC8C1006ED1AA /* TestJSON */ = {
+			isa = PBXGroup;
+			children = (
+				DC3553A526DAC8E7006ED1AA /* MockManufacturerList.json */,
+				DC3553A726DBA143006ED1AA /* MockModelsList.json */,
+			);
+			path = TestJSON;
+			sourceTree = "<group>";
+		};
+		DC3553AD26DBB021006ED1AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC35538E26D69506006ED1AA /* CZCommonListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC72867626D645F100608ECF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DC72867A26D6463600608ECF /* Resources */,
+				DC72867826D6461900608ECF /* Configuaration */,
+				DC72867726D6460D00608ECF /* AppDelegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DC72867726D6460D00608ECF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC189ECA26D5198300BD0A18 /* AppDelegate.swift */,
+				DC189ECC26D5198300BD0A18 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DC72867826D6461900608ECF /* Configuaration */ = {
+			isa = PBXGroup;
+			children = (
+				DC72867926D6462600608ECF /* Plist */,
+			);
+			path = Configuaration;
+			sourceTree = "<group>";
+		};
+		DC72867926D6462600608ECF /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				DC189EDB26D5198600BD0A18 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		DC72867A26D6463600608ECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC189ED626D5198600BD0A18 /* Assets.xcassets */,
+				DC189ED826D5198600BD0A18 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC72867F26D64B4F00608ECF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC72868426D64E3B00608ECF /* CZURLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC72868926D655A500608ECF /* Interacter */ = {
+			isa = PBXGroup;
+			children = (
+				DC72868A26D655B700608ECF /* CZListInteracter.swift */,
+			);
+			path = Interacter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +451,9 @@
 			files = (
 				DC189EDA26D5198600BD0A18 /* LaunchScreen.storyboard in Resources */,
 				DC189ED726D5198600BD0A18 /* Assets.xcassets in Resources */,
-				DC189ED226D5198300BD0A18 /* Main.storyboard in Resources */,
+				DCADD8D126DD05B600C9F69D /* README.md in Resources */,
+				DC35539526D6A063006ED1AA /* CZCommonListTableViewCell.xib in Resources */,
+				DC35538926D69478006ED1AA /* CZMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +461,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3553A626DAC8E7006ED1AA /* MockManufacturerList.json in Resources */,
+				DC3553A826DBA143006ED1AA /* MockModelsList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +480,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC189ECF26D5198300BD0A18 /* ViewController.swift in Sources */,
+				DC189F0826D51F7000BD0A18 /* CZInformationAPI.swift in Sources */,
+				DC35538F26D69506006ED1AA /* CZCommonListViewController.swift in Sources */,
+				DC189F0426D51DE200BD0A18 /* CZResponseHandler+Extensions.swift in Sources */,
+				DC35539426D6A063006ED1AA /* CZCommonListTableViewCell.swift in Sources */,
 				DC189ECB26D5198300BD0A18 /* AppDelegate.swift in Sources */,
+				DCADD8D426DD1EA600C9F69D /* CZReachability.swift in Sources */,
+				DC189F0026D51DAE00BD0A18 /* CZAPIHandler.swift in Sources */,
+				DC72867C26D649C300608ECF /* CZNetworkRequest.swift in Sources */,
+				DC72868526D64E3B00608ECF /* CZURLRequest+Extensions.swift in Sources */,
 				DC189ED526D5198300BD0A18 /* CarZone.xcdatamodeld in Sources */,
+				DC72867E26D649FD00608ECF /* CZRequestProtocol.swift in Sources */,
+				DC35538D26D694E3006ED1AA /* CZListPresenter.swift in Sources */,
+				DC189F0D26D5200000BD0A18 /* CZCarManufacturer.swift in Sources */,
+				DC35538B26D694A5006ED1AA /* CZListRouter.swift in Sources */,
+				DC35538226D6924F006ED1AA /* CZNavigationBuilder.swift in Sources */,
 				DC189ECD26D5198300BD0A18 /* SceneDelegate.swift in Sources */,
+				DC189F0626D51DF000BD0A18 /* CZAPIConstants.swift in Sources */,
+				DC189F0226D51DBC00BD0A18 /* CZAPILoader.swift in Sources */,
+				DC35539C26DA0FF1006ED1AA /* CZCommonListVC+Layout.swift in Sources */,
+				DC72868B26D655B700608ECF /* CZListInteracter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC189EE526D5198600BD0A18 /* CarZoneTests.swift in Sources */,
+				DC3553AF26DBB125006ED1AA /* ServiceAPITests.swift in Sources */,
+				DC3553A326DABD96006ED1AA /* ListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +536,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC189ED026D5198300BD0A18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC189ED126D5198300BD0A18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC189ED826D5198600BD0A18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +669,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarZone/Info.plist;
+				DEVELOPMENT_TEAM = HQBW929TEH;
+				INFOPLIST_FILE = CarZone/Application/Configuaration/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +689,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarZone/Info.plist;
+				DEVELOPMENT_TEAM = HQBW929TEH;
+				INFOPLIST_FILE = CarZone/Application/Configuaration/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +709,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQBW929TEH;
 				INFOPLIST_FILE = CarZoneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +731,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQBW929TEH;
 				INFOPLIST_FILE = CarZoneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +752,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQBW929TEH;
 				INFOPLIST_FILE = CarZoneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,6 +772,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQBW929TEH;
 				INFOPLIST_FILE = CarZoneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

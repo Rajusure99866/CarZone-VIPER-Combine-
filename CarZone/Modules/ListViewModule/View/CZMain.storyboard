@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Common List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="listViewController" id="Y6W-OH-hqX" customClass="CZCommonListViewController" customModule="CarZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nol-vE-Lmk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-Lo-FLl">
+                                <rect key="frame" x="129.5" y="441" width="155" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="hru-fh-eZr">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q35-wJ-Drc">
+                                <rect key="frame" x="182" y="383" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gjr-hd-bRD"/>
+                                    <constraint firstAttribute="height" constant="50" id="xWz-Vi-ehM"/>
+                                </constraints>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshList:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="h0e-hw-XFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hru-fh-eZr" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="3te-WN-sLK"/>
+                            <constraint firstAttribute="bottom" secondItem="nol-vE-Lmk" secondAttribute="bottom" id="Cm5-VJ-Led"/>
+                            <constraint firstItem="hru-fh-eZr" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Ehh-SH-2D3"/>
+                            <constraint firstItem="q35-wJ-Drc" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="JzE-jt-65d"/>
+                            <constraint firstItem="nol-vE-Lmk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NSl-a6-i4B"/>
+                            <constraint firstItem="Jpz-Lo-FLl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="SuB-X2-cPp"/>
+                            <constraint firstItem="nol-vE-Lmk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="f0n-Ks-4fa"/>
+                            <constraint firstItem="Jpz-Lo-FLl" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="lBJ-S2-h4D"/>
+                            <constraint firstItem="nol-vE-Lmk" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="nMi-4G-qnX"/>
+                            <constraint firstItem="hru-fh-eZr" firstAttribute="top" secondItem="q35-wJ-Drc" secondAttribute="bottom" constant="1.5" id="vXy-h0-1T5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listTableView" destination="nol-vE-Lmk" id="kd6-HW-nCd"/>
+                        <outlet property="loadingIndicator" destination="hru-fh-eZr" id="tCz-94-rVh"/>
+                        <outlet property="messageLabel" destination="Jpz-Lo-FLl" id="oOp-Oj-UdG"/>
+                        <outlet property="refreshButton" destination="q35-wJ-Drc" id="nOr-d1-COb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

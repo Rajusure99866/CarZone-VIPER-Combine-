@@ -12,8 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        let dummy = CZManufacturerListInteracter()
+//        
+//        dummy.GetManufacturers { brands,_ in
+//            print(brands)
+//        }
     }
-
-
+    
 }
 
